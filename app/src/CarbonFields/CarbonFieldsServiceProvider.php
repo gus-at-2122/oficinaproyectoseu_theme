@@ -78,21 +78,40 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 	 * @return void
 	 */
 	protected function registerPostMeta() {
-		/*
-		Container::make( 'post_meta', __( 'Custom Data', 'ope_gandia' ) )
-			->where( 'post_type', '=', 'page' )
+
+		Container::make( 'post_meta', __( 'Announcement Data', 'ope_gandia' ) )
+			->where( 'post_type', '=', 'ope_announcement' )
 			->add_fields( array(
-				Field::make( 'complex', 'crb_my_data' )
-					->add_fields( array(
-						Field::make( 'text', 'title' )
-							->help_text( 'lorem' ),
-					) ),
-				Field::make( 'map', 'crb_location' )
-					->set_position( 37.423156, -122.084917, 14 ),
-				Field::make( 'image', 'crb_img' ),
-				Field::make( 'file', 'crb_pdf' ),
+				Field::make('text','ope_anno_shortdesc',__('Short description')),
+				Field::make("select", "ope_anno_type", "Select Type")
+					->add_options(array(
+						'a' => 'External',
+						'b' => 'Internal'
+					)),
+
+				Field::make('text', 'ope_url', 'External URL')
+					->set_conditional_logic(array(
+						array(
+							'field' => 'ope_anno_type',
+							'value' => 'a',
+							'compare' => '=',
+						)
+					)),
+
+				Field::make('rich_text', 'ope_body', 'Description')
+					->set_conditional_logic(array(
+						array(
+							'field' => 'ope_anno_type',
+							'value' => 'b',
+							'compare' => '=',
+						)
+					))
+
+
+
 			));
-		*/
+
+
 	}
 
 	/**
@@ -101,13 +120,13 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 	 * @return void
 	 */
 	protected function registerTermMeta() {
-		/*
+
 		Container::make( 'term_meta', __( 'Custom Data', 'ope_gandia' ) )
-			->where( 'term_taxonomy', '=', 'category' )
+			->where( 'term_taxonomy', '=', 'ope_scope' )
 			->add_fields( array(
-				Field::make( 'image', 'crb_img' ),
+				Field::make( 'image', 'ope_tax_thumbnail' ),
 			));
-		*/
+
 	}
 
 	/**

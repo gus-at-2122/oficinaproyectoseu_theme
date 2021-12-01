@@ -53,7 +53,7 @@ class ContentTypesServiceProvider implements ServiceProviderInterface
 				'hierarchical'        => false,
 				'query_var'           => true,
 				'menu_icon'           => 'dashicons-admin-post',
-				'supports'            => array( 'title', 'editor', 'page-attributes' ),
+				'supports'            => array( 'title', 'thumbnail', 'page-attributes' ),
 				'rewrite'             => array(
 					'slug'       => 'announcement',
 					'with_front' => false,
