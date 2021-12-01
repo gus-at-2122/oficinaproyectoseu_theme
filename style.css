@@ -1,0 +1,28 @@
+/*
+Theme Name: OpeGandia theme
+Theme URI:http://oficinaproyectoseu.smartcitygandia.com/
+Author: Urbalab Gandia
+Author URI: https://urbalab.com/
+
+Version:0.0.1
+License: GPL-2.0-only
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ope_gandia
+Domain Path: /languages
+*/
+
+/*
+Source SASS styles are located in resources/styles/.
+The compiled bundles are in dist/styles/{xyz}-bundle.css.
+The README.md file contains instructions on
+how to get the build process up & running.
+
+If you need to make a quick fix, feel free to add CSS
+below this comment - it will override the bundled styles.
+*/
+
+.sticky {  }
+
+.gallery-caption {  }
+
+.bypostauthor {  }
