@@ -2,6 +2,7 @@
 
 namespace OpeGandia\CarbonFields;
 
+use Carbon_Fields\Block;
 use Carbon_Fields\Container\Container;
 use Carbon_Fields\Field\Field;
 use WPEmerge\ServiceProviders\ServiceProviderInterface;
@@ -55,6 +56,7 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 		$this->registerPostMeta();
 		$this->registerTermMeta();
 		$this->registerUserMeta();
+		$this->registerGutenbergBlocks();
 	}
 
 	/**
@@ -141,6 +143,26 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 				Field::make( 'image', 'crb_img' ),
 			));
 		*/
+	}
+
+	protected function registerGutenbergBlocks(){
+
+
+		Block::make(__('Featured Announcements Carousel', 'ope_gandia'))
+			->set_description(__('Featured Announcementes Carousel', 'ope_gandia'))
+			->set_category('theme - category', __('Theme category', 'ope_gandia'), 'admin - customizer')
+			->add_fields(array(
+				Field::make( 'association', 'eo_featured_annos', __( 'Tipos de enlace' ) )
+					->set_types( array(
+						array(
+							'type' => 'post',
+							'post_type' => 'ope_announcement',
+						)
+					) )
+			))
+			->set_render_callback("\OpeGandia\GutenbergViews\FeaturedAnnosCarouseel::render");
+
+
 	}
 
 	/**
