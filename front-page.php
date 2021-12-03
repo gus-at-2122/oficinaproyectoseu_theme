@@ -13,14 +13,135 @@
 <?php while ( have_posts() ) : ?>
 	<?php the_post(); ?>
 	<div <?php post_class(); ?>>
-		<?php ope_gandia_the_title( '<h2 class="post-title">', '</h2>' ); ?>
-
-		<div class="page__content">
-			<?php the_content(); ?>
 
 
+		<div class="parallax-window" data-parallax="scroll" data-image-src="http://placehold.it/1920x1080"></div>
+		<div class="row my-5">
+			<div class="col-md-10 offset-md-1">
+				<div class="page__content">
 
-			<?php \OpeGandia::render( 'views/partials/pagination' ); ?>
+					<div class="col-md-12 ">
+						<div class="variable-width row">
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="http://placehold.it/1920x1080" alt="" class="img-fluid">
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<script>
+						$('.variable-width').slick({
+							dots: false,
+							infinite: true,
+							speed: 300,
+							slidesToShow: 4,
+							centerMode: true,
+							arrows:false,
+							autoplay:true
+						});
+
+					</script>
+
+
+				<section>
+						<div class="row">
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="row">
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="row">
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="row">
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="row">
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="row">
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="row">
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="row">
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+							<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore libero non odio optio rem. Exercitationem, provident, velit. Dignissimos doloremque excepturi ipsam ipsum laborum libero maiores, nostrum perspiciatis sed voluptatibus.</div>
+						</div>
+					</section>
+
+
+
+					<?php \OpeGandia::render( 'views/partials/pagination' ); ?>
+				</div>
+			</div>
 		</div>
+
 	</div>
 <?php endwhile; ?>

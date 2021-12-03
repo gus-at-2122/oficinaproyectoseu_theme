@@ -84,30 +84,7 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 		Container::make( 'post_meta', __( 'Announcement Data', 'ope_gandia' ) )
 			->where( 'post_type', '=', 'ope_announcement' )
 			->add_fields( array(
-				Field::make('text','ope_anno_shortdesc',__('Short description')),
-				Field::make("select", "ope_anno_type", "Select Type")
-					->add_options(array(
-						'a' => 'External',
-						'b' => 'Internal'
-					)),
-
-				Field::make('text', 'ope_url', 'External URL')
-					->set_conditional_logic(array(
-						array(
-							'field' => 'ope_anno_type',
-							'value' => 'a',
-							'compare' => '=',
-						)
-					)),
-
-				Field::make('rich_text', 'ope_body', 'Description')
-					->set_conditional_logic(array(
-						array(
-							'field' => 'ope_anno_type',
-							'value' => 'b',
-							'compare' => '=',
-						)
-					))
+				Field::make('rich_text','ope_anno_shortdesc',__('Short description')),
 
 
 

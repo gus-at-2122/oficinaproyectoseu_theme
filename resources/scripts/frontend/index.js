@@ -6,3 +6,4 @@ import '@images/favicon.ico';
 import './spritesvg';
 
 // Your code goes here ...
+import 'jquery-parallax.js';
