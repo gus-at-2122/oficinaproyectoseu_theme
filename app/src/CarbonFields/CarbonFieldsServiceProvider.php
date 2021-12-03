@@ -81,7 +81,7 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 	 */
 	protected function registerPostMeta() {
 
-		Container::make( 'post_meta', __( 'Announcement Data', 'ope_gandia' ) )
+		Container::make( 'post_meta', __( 'Convocatoria Data', 'ope_gandia' ) )
 			->where( 'post_type', '=', 'ope_announcement' )
 			->add_fields( array(
 				Field::make('rich_text','ope_anno_shortdesc',__('Short description')),
@@ -125,8 +125,8 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 	protected function registerGutenbergBlocks(){
 
 
-		Block::make(__('Featured Announcements Carousel', 'ope_gandia'))
-			->set_description(__('Featured Announcementes Carousel', 'ope_gandia'))
+		Block::make(__('Featured Convocatorias Carousel', 'ope_gandia'))
+			->set_description(__('Featured Convocatoriaes Carousel', 'ope_gandia'))
 			->set_category('theme - category', __('Theme category', 'ope_gandia'), 'admin - customizer')
 			->add_fields(array(
 				Field::make( 'association', 'eo_featured_annos', __( 'Tipos de enlace' ) )
