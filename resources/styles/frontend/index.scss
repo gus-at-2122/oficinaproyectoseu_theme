@@ -26,7 +26,8 @@
 
 /* ---------------- For sticky header: class="float-panel"  ------------------*/
 .float-panel {
-  width:100%;background:white;z-index:300;padding:30px 0;transform: translateZ(0);
+  width:100%;
+  background:white;z-index:300;padding:5px 0;transform: translateZ(0);
   transition:all 0.5s; /* Effect for switching from .fixed to static */
 }
 .float-panel .content-area {margin:10px auto;}
@@ -263,5 +264,22 @@ h4 {
 
 
 .parallax-window {
-  height: 350px;
+  height: 275px;
+}
+
+
+.navbar .nav-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.dropdown-toggle::after {
+  transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+
+.dropdown-menu {
+  margin-top: 0;
 }

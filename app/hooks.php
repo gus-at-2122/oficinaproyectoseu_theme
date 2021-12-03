@@ -13,3 +13,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // phpcs:ignore
 // add_action( 'some_action', 'some_function' );
+/**
+ * Registeramos Custom Navigation Walker
+ */
+
+
+
+/*Registrando el menú*/
+register_nav_menus( array(
+	'primary' => __( 'Menú principal', 'WPB4' ),
+) );

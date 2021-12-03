@@ -16,7 +16,9 @@
 
 
 		<div class="parallax-window" data-parallax="scroll" data-image-src="http://placehold.it/1920x1080"></div>
-		<div class="row my-5">
+
+		<div class="container-fluid px-0">
+			<div class="row my-5 mx-0">
 			<div class="col-md-10 offset-md-1">
 				<div class="page__content">
 
@@ -63,7 +65,7 @@
 							dots: false,
 							infinite: true,
 							speed: 300,
-							slidesToShow: 4,
+							slidesToShow: 5,
 							centerMode: true,
 							arrows:false,
 							autoplay:true
@@ -141,6 +143,7 @@
 					<?php \OpeGandia::render( 'views/partials/pagination' ); ?>
 				</div>
 			</div>
+		</div>
 		</div>
 
 	</div>
