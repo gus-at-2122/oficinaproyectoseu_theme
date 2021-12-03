@@ -283,3 +283,93 @@ h4 {
 .dropdown-menu {
   margin-top: 0;
 }
+
+.ova-details {
+  padding: 10px 20px;
+  border-radius: 20px;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+
+  &.linear-gradient-active {
+    background: linear-gradient(90deg, rgba(105, 238, 191, 0.8) 0%, rgba(92, 255, 196, 0) 100%);
+    border-radius: 8px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+
+  &.ova-linear-gradient {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(180deg, #3DEEA4 0%, #6EDDE8 74.48%, #79D9F8 100%);
+      border-radius: 8px;
+    }
+
+    &:hover {
+      &:before {
+        width: 100%;
+        background: linear-gradient(90deg, rgba(105, 238, 191, 0.8) 0%, rgba(92, 255, 196, 0) 100%);
+        border-radius: 8px;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+      }
+    }
+  }
+
+  .title {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    color: #000300;
+    margin-bottom: 15px;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+    z-index: 3;
+    @media( max-width: 767px ){
+      line-height: 1.2em;
+    }
+
+  }
+
+  .desc {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #000;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+
+.navbar-toggler{
+  width: 47px;
+  height: 34px;
+  border:none;
+}
+.navbar-toggler .line{
+  width: 100%;
+  float: left;
+  height: 2px;
+  background-color: darkslateblue;
+  margin-bottom: 5px;
+}
