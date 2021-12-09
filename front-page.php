@@ -13,7 +13,6 @@
 <?php while ( have_posts() ) : ?>
 	<?php the_post(); ?>
 	<div>
-
 		<div class="container-fluid mx-0 px-0">
 			<div class="parallax-window" data-parallax="scroll" data-image-src="http://placehold.it/1920x1080">
 			</div>
@@ -21,31 +20,18 @@
 		<section id="intro">
 			<div class="container-fluid px-0">
 				<div class="row">
-					<div class="col-md-8 offset-2">
+					<div class="col-md-8 offset-md-2">
 						<p><strong class="brand-strong">Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Assumenda eos in itaque, labore laudantium magni minus nobis nulla pariatur recusandae. Ad adipisci assumenda commodi deserunt id laboriosam, officia repellat ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, consequatur delectus eos illo iste libero magni minus molestias, odio suscipit tenetur voluptatibus voluptatum. Aut, dolore quae? Dolorem fugit illo recusandae.</p>
 					</div>
 				</div>
 				<div class="row py-5">
 					<div class="col-md-8 offset-2">
 						<div class="row">
-							<div class="col-md-4">
-								<div class="row">
-									<div class="col-md-6"><div class="display-1 float-left">Líneas de <br>Trabajo</div></div>
-									<div class="col-md align-items-center"><div class="h-dash"></div></div>
+							<div class="col-md"><div class="display-1">Líneas de <br>Trabajo</div></div>
+							<div class="col-md">
+								<div class="ova-details ova-linear-gradient">
+									<div class="title">Servicio intra-municipal en materia de <strong>Fondos Europeos</strong></div>
 								</div>
-
-							</div>
-							<div class="col-md-6">
-								<div class="row">
-									<div class="col-md-8">
-										<div class="ova-details ova-linear-gradient">
-											<div class="title">Servicio intra-municipal en materia de <strong>Fondos Europeos</strong></div>
-										</div>
-									</div>
-									<div class="col-md align-items-center"><div class="h-dash"></div></div>
-								</div>
-
-
 							</div>
 							<div class="col-md">
 								<div class="ova-details ova-linear-gradient">
@@ -69,18 +55,18 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="row align-items-center">
-								<div class="col-md">
+								<div class="col-md text-center text-md-right" >
 									<img src="http://placehold.it/100x100" alt="" class="img-fluid">
 								</div>
-								<div class="col-md-10">
+								<div class="col-md-10 text-center text-md-right">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi, qui. Doloremque et impedit molestiae quaerat quidem. A ad corporis delectus eligendi esse iure nesciunt odit placeat, sunt temporibus veritatis!</p>
 								</div>
 							</div>
 							<div class="row py-5">
-								<div class="col-md">
+								<div class="col-md text-center text-md-right">
 									<img src="http://placehold.it/100x100" alt="" class="img-fluid">
 								</div>
-								<div class="col-md-10">
+								<div class="col-md-10 text-center text-md-right">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi, qui. Doloremque et impedit molestiae quaerat quidem. A ad corporis delectus eligendi esse iure nesciunt odit placeat, sunt temporibus veritatis!</p>
 								</div>
 							</div>
