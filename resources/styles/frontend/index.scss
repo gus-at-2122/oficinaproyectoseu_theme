@@ -13,6 +13,7 @@
 @import '~@styles/shared/_variables.scss';
 @import '~@styles/shared/_editor.scss';
 @import './_variables.scss';
+@import './_typos.scss';
 @import './_sprite.scss';
 
 /* ------------------------------------------------------------ *\
@@ -377,4 +378,50 @@ h4 {
   height: 2px;
   background-color: darkslateblue;
   margin-bottom: 5px;
+}
+
+.navbar-brand {
+  img {
+    max-width: 110px !important;
+  }
+}
+#intro {
+  background-color: lightgoldenrodyellow;
+  .display-1 {
+    font-size: 30px;
+    color:$brand-primary;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+#servicios {
+  background-color: lightgoldenrodyellow;
+}
+
+#eventos-recursos {
+  background-color: $brand-primary;
+
+}
+
+.brand-strong {
+  font-size: 25px;
+  color: $brand-primary;
+
+}
+
+.event-card {
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 1em;
+  color: #fff;
+}
+
+.h-dash{
+  content: '';
+  display: block;
+  height: 2px;
+  border-top: 2px dashed $brand-primary;
+  position: relative;
+  top: 50%;
 }

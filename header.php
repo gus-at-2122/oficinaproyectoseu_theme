@@ -28,9 +28,10 @@
 		<div class="float-panel" data-top="0" data-scroll="500">
 			<div class="row mx-0">
 				<div class="col-md-10 offset-md-1">
-					<nav class="navbar navbar-expand-lg">
+					<nav class="navbar navbar-expand-lg py-0">
 						<a class="navbar-brand" href="<?=bloginfo('url')?>">
-							<img class="logo horizontal-logo img-fluid" src="http://placehold.it/100x30" alt="">
+							<img class="logo horizontal-logo img-fluid" src="<?= \OpeGandia::core()->assets()->getAssetUrl( 'images/logo_eu.png' )
+							?>" alt="">
 						</a>
 						<button
 							class="navbar-toggler collapsed"
