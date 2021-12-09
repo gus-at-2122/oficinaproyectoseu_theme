@@ -29,6 +29,7 @@
   width:100%;
   background:white;z-index:300;padding:5px 0;transform: translateZ(0);
   transition:all 0.5s; /* Effect for switching from .fixed to static */
+  position: relative;
 }
 .float-panel .content-area {margin:10px auto;}
 .float-panel a {font-size:16px;text-decoration:none;color:#444;display:inline-block;padding:10px 20px;}
@@ -268,9 +269,13 @@ h4 {
 }
 
 
+.navbar {
+  position: static;
+}
+/*
 .navbar .nav-item:not(:last-child) {
   margin-right: 35px;
-}
+}*/
 
 .dropdown-toggle::after {
   transition: transform 0.15s linear;

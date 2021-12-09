@@ -1,0 +1,463 @@
+# <!=Copyright (C) 2020 atanasangelovdev
+# This file is distributed under the GPL-2.0-only.=!>
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpeGandia theme\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wpemerge\n"
+"POT-Creation-Date: 2021-12-01 14:17+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
+
+#: views/partials/post-meta.php:31
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:20
+msgid "% Responses"
+msgstr ""
+
+#. comment date and time
+#: views/partials/comment-single.php:25
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. %1$s = plugin or theme name; %2$s = minimum version number; %3$s = maximum version number; %4$s plugin or theme name; %5$s loaded version number.
+#: app/version.php:54
+msgid ""
+"%1$s requires WP Emerge version >= %2$s and < %3$s but %4$s has already "
+"loaded version %5$s."
+msgstr ""
+
+#: views/partials/comment-single.php:29
+msgid "(Edit)"
+msgstr ""
+
+#: views/partials/post-meta.php:31
+msgid "1 Comment"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:40
+msgid "Add New"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:41
+msgid "Add new Announcement"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:87
+msgid "Add New Scopes"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:81
+msgid "All Scopes"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:189
+msgid "Amber"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:39
+msgctxt "Convocatoria"
+msgid "Announcement"
+msgstr ""
+
+#: app/src/CarbonFields/CarbonFieldsServiceProvider.php:84
+msgid "Announcement Data"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:38
+msgid "Announcements"
+msgstr ""
+
+#: app/helpers/title.php:45
+msgid "Archives"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:149
+msgid "Blue"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:214
+msgid "Blue Grey"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:204
+msgid "Brown"
+msgstr ""
+
+#. post author attribution
+#: views/partials/post-meta.php:21
+msgid "by %s"
+msgstr ""
+
+#. category post listing page title
+#: app/helpers/title.php:28
+msgid "Category Archives: %s"
+msgstr ""
+
+#: comments.php:43
+msgid "Comments are closed."
+msgstr ""
+
+#: app/src/Widgets/Carbon_Rich_Text_Widget.php:22
+msgid "Content"
+msgstr ""
+
+#: app/src/CarbonFields/CarbonFieldsServiceProvider.php:126
+msgid "Custom Data"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:159
+msgid "Cyan"
+msgstr ""
+
+#. day archive post listing page title
+#: app/helpers/title.php:34
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:199
+msgid "Deep Orange"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:139
+msgid "Deep Purple"
+msgstr ""
+
+#: app/src/WordPress/WidgetsServiceProvider.php:61
+msgid "Default Sidebar"
+msgstr ""
+
+#: app/src/Widgets/Carbon_Rich_Text_Widget.php:19
+msgid "Displays a block with title and WYSIWYG content."
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:43
+msgid "Edit Announcement"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:85
+msgid "Edit Scopes"
+msgstr ""
+
+#: page.php:21
+msgid "Edit this entry."
+msgstr ""
+
+#: app/helpers/title.php:47
+msgid "Error 404 - Not Found"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:263
+msgid "extra large"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:239
+msgid "extra small"
+msgstr ""
+
+#: app/src/CarbonFields/CarbonFieldsServiceProvider.php:152
+msgid "Featured Announcementes Carousel"
+msgstr ""
+
+#: app/src/CarbonFields/CarbonFieldsServiceProvider.php:151
+msgid "Featured Announcements Carousel"
+msgstr ""
+
+#: app/src/CarbonFields/CarbonFieldsServiceProvider.php:73
+msgid "Footer Script"
+msgstr ""
+
+#: app/src/CarbonFields/CarbonFieldsServiceProvider.php:71
+msgid "Google Maps API Key"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:169
+msgid "Green"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:209
+msgid "Grey"
+msgstr ""
+
+#: app/src/CarbonFields/CarbonFieldsServiceProvider.php:72
+msgid "Header Script"
+msgstr ""
+
+#. URI of the theme
+msgid "http://oficinaproyectoseu.smartcitygandia.com/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://urbalab.com/"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:144
+msgid "Indigo"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:258
+msgid "L"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:257
+msgid "large"
+msgstr ""
+
+#: comments.php:50
+msgid "Leave a Reply"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:154
+msgid "Light Blue"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:174
+msgid "Light Green"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:179
+msgid "Lime"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:252
+msgid "M"
+msgstr ""
+
+#: app/src/WordPress/MenusServiceProvider.php:33
+msgid "Main Menu"
+msgstr ""
+
+#. month archive post listing page title
+#: app/helpers/title.php:37
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:44
+msgid "New Announcement"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:88
+msgid "New Scopes Name"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:46
+msgid "No announcement found"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:47
+msgid "No announcement found in trash"
+msgstr ""
+
+#: views/partials/post-meta.php:31
+msgid "No Comments"
+msgstr ""
+
+#: app/helpers/content.php:52
+msgid "No posts found."
+msgstr ""
+
+#: app/helpers/content.php:49
+msgid "No posts found. Try a different search?"
+msgstr ""
+
+#: comments.php:20
+msgid "No Responses"
+msgstr ""
+
+#: comments.php:20
+msgid "One Response"
+msgstr ""
+
+#. Name of the theme
+msgid "OpeGandia theme"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:194
+msgid "Orange"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:82
+msgid "Parent Scopes"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:83
+msgid "Parent Scopes:"
+msgstr ""
+
+#. post link title attribute
+#: app/helpers/content.php:20
+msgid "Permanent Link to %s"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:129
+msgid "Pink"
+msgstr ""
+
+#. 404 page content; placeholders represents homepage opening and closing anchor tags
+#. generic error page content; placeholders represents homepage opening and closing anchor tags
+#: 404.php:15 error-admin.php:14 error-ajax.php:14 error.php:16
+msgid ""
+"Please check the URL for proper spelling and capitalization. If you're "
+"having trouble locating a destination, try visiting the %1$shome page%2$s."
+msgstr ""
+
+#: views/partials/post-meta.php:27
+msgid "Posted in "
+msgstr ""
+
+#. author archive post listing page title
+#: app/helpers/title.php:43
+msgid "Posts by %s"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:134
+msgid "Purple"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:124
+msgid "Red"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:251
+msgid "regular"
+msgstr ""
+
+#: app/src/Widgets/Carbon_Rich_Text_Widget.php:18
+msgid "Rich Text"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:246
+msgid "S"
+msgstr ""
+
+#: views/partials/comment-single.php:14
+msgid "says:"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:79
+msgid "Scope"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:78
+#: app/src/WordPress/ContentTypesServiceProvider.php:89
+msgid "Scopes"
+msgstr ""
+
+#: searchform.php:18
+msgid "Search"
+msgstr ""
+
+#: searchform.php:15
+msgid "Search &hellip;"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:45
+msgid "Search Announcement"
+msgstr ""
+
+#: searchform.php:13 searchform.php:15
+msgid "Search for:"
+msgstr ""
+
+#. search results page title
+#: app/helpers/title.php:25
+msgid "Search Results for: %s"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:80
+msgid "Search Scopes"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:245
+msgid "small"
+msgstr ""
+
+#. tag post listing page title
+#: app/helpers/title.php:31
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: views/partials/post-meta.php:36
+msgid "Tags:"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:164
+msgid "Teal"
+msgstr ""
+
+#: app/src/CarbonFields/CarbonFieldsServiceProvider.php:153
+msgid "Theme category"
+msgstr ""
+
+#: app/src/CarbonFields/CarbonFieldsServiceProvider.php:68
+msgid "Theme Options"
+msgstr ""
+
+#. no posts found for category
+#: app/helpers/content.php:31
+msgid "There are no posts in the %s category yet."
+msgstr ""
+
+#. no posts found by author
+#: app/helpers/content.php:45
+msgid "There are no posts published by %s yet."
+msgstr ""
+
+#: app/helpers/content.php:39
+msgid "There are no posts published on this date."
+msgstr ""
+
+#. no posts found with tag
+#: app/helpers/content.php:35
+msgid "There are no posts with the %s tag yet."
+msgstr ""
+
+#: app/src/Widgets/Carbon_Rich_Text_Widget.php:21
+msgid "Title"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:86
+msgid "Update Scopes"
+msgstr ""
+
+#. Author of the theme
+msgid "Urbalab Gandia"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:42
+msgid "View Announcement"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:84
+msgid "View Scopes"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:264
+msgid "XL"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:240
+msgid "XS"
+msgstr ""
+
+#. year archive post listing page title
+#: app/helpers/title.php:40
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:184
+msgid "Yellow"
+msgstr ""
+
+#: views/partials/comment-single.php:18
+msgid "Your comment is awaiting moderation."
+msgstr ""

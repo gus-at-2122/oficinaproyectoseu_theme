@@ -24,40 +24,38 @@
 	<body <?php body_class(); ?>>
 
 	<div class="container-fluid px-0">
-		<?php ope_gandia_shim_wp_body_open(); ?>
 
-			<div class="float-panel" data-top="0" data-scroll="500">
-				<div class="row mx-0">
-					<div class="col-md-10 offset-md-1">
-						<nav class="navbar navbar-expand-lg">
-							<a class="navbar-brand" href="#">
-								<img class="logo horizontal-logo img-fluid" src="http://placehold.it/100x30" alt="">
-							</a>
-
-
-							<button
-								class="navbar-toggler collapsed"
-								data-target="#navbarSupportedContent"
-								data-toggle="collapse"
-								aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="line"></span>
-								<span class="line"></span>
-								<span class="line"></span>
-							</button>
-
-							<?php
-							wp_nav_menu( array(
-								'theme_location'    => 'primary',
-								'depth'             => 4,
-								'container'         => 'div',
-								'container_class'   => 'collapse navbar-collapse',
-								'container_id'      => 'navbarSupportedContent',
-								'menu_class'        => 'nav navbar-nav ml-auto',
-								'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'            => new WP_Bootstrap_Navwalker(),
-							) );
-							?>
-						</nav>
-					</div>
+		<div class="float-panel" data-top="0" data-scroll="500">
+			<div class="row mx-0">
+				<div class="col-md-10 offset-md-1">
+					<nav class="navbar navbar-expand-lg">
+						<a class="navbar-brand" href="<?=bloginfo('url')?>">
+							<img class="logo horizontal-logo img-fluid" src="http://placehold.it/100x30" alt="">
+						</a>
+						<button
+							class="navbar-toggler collapsed"
+							data-target="#navbarSupportedContent"
+							data-toggle="collapse"
+							aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</button>
+						<?php
+						wp_nav_menu( array(
+							'theme_location'    => 'primary',
+							'depth'             => 4,
+							'container'         => 'div',
+							'container_class'   => 'collapse navbar-collapse',
+							'container_id'      => 'navbarSupportedContent',
+							'menu_class'        => 'nav navbar-nav ml-auto',
+							'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+							'walker'            => new WP_Bootstrap_Navwalker(),
+						) );
+						?>
+					</nav>
 				</div>
 			</div>
+		</div>
+	</div>
+

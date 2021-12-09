@@ -13,50 +13,63 @@
  */
 
 ?>
-<?php while ( have_posts() ) : ?>
+<?php while (have_posts()) : ?>
 	<?php the_post(); ?>
 	<div <?php post_class(); ?>>
+		<div class="container-fluid px-0 position-relative" style="z-index:-1">
+			<div class="row my-1 mx-0">
+				<div class="col-md-10 offset-md-1">
 
-		<div class="page__content">
-
-
-		<?php
-			$terms = get_terms( array(
-			'taxonomy' => 'ope_scope',
-			'hide_empty' => false,
-			) );
-
-
-			foreach ($terms as $scope) {
-				$args = array(
-					'post_type' => 'ope_announcement',
-					'tax_query' => array(
-						array(
+						<?php
+						$terms = get_terms(array(
 							'taxonomy' => 'ope_scope',
-							'field'    => 'term_id',
-							'terms'    => $scope->term_id,
-						),
-					),
-				);
-				$query = new WP_Query($args);
+							'hide_empty' => false,
+						));
 
-				if ( $query->have_posts() ){ ?>
-				<p><?php echo $scope->name ; ?></p>
-				<?php
-					while($query -> have_posts()) : $query -> the_post(); ?>
-						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<p><?php the_content(); ?></p> <?php
-					endwhile;
+						foreach ($terms as $scope) {
 
-				}
+							$args = array(
+								'post_type' => 'ope_announcement',
+								'tax_query' => array(
+									array(
+										'taxonomy' => 'ope_scope',
+										'field' => 'term_id',
+										'terms' => $scope->term_id,
+									),
+								),
+							);
+
+							?>
+							<div class="row">
+								<div class="col-md">
+									<h2 class="display-2"><a href="<?= get_term_link($scope->term_id)?>"><?= $scope->name?></a></h2>
+								</div>
+							</div>
+							<div class="row">
+								<?php
+								$query = new WP_Query($args);
+								if ($query->have_posts()) { ?>
+									<?php
+									while ($query->have_posts()) : $query->the_post();
+										?>
+										<div class="col-md-3">
+										<?php \OpeGandia::render('views/partials/announcement');
+										endwhile;?>
+									</div>
+								<?php
+								}
+								wp_reset_query();?>
+							</div>
 
 
+						<?php
+						}
+						?>
 
+					</div>
 
-				wp_reset_query() ;
-			}
-
-		?>
+				</div>
+			</div>
 		</div>
 	</div>
 <?php endwhile; ?>
