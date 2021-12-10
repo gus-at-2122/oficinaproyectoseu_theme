@@ -61,6 +61,36 @@ class ContentTypesServiceProvider implements ServiceProviderInterface
 				'show_in_rest' => true,
 			)
 		);
+		register_post_type(
+			'ope_resource',
+			array(
+				'labels'              => array(
+					'name'               => __( 'Recursos', 'ope_gandia' ),
+					'singular_name'      => __( 'Recurso', 'ope_gandia' ),
+					'add_new'            => __( 'Add New', 'ope_gandia' ),
+					'add_new_item'       => __( 'Add new Recurso', 'ope_gandia' ),
+					'view_item'          => __( 'View Recurso', 'ope_gandia' ),
+					'edit_item'          => __( 'Edit Recurso', 'ope_gandia' ),
+					'new_item'           => __( 'New Recurso', 'ope_gandia' ),
+					'search_items'       => __( 'Search Recurso', 'ope_gandia' ),
+					'not_found'          => __( 'No announcement found', 'ope_gandia' ),
+					'not_found_in_trash' => __( 'No announcement found in trash', 'ope_gandia' ),
+				),
+				'public'              => true,
+				'exclude_from_search' => false,
+				'show_ui'             => true,
+				'capability_type'     => 'post',
+				'hierarchical'        => false,
+				'query_var'           => true,
+				'menu_icon'           => 'dashicons-admin-post',
+				'supports'            => array( 'title', 'thumbnail', 'page-attributes' ),
+				'rewrite'             => array(
+					'slug'       => 'recurso',
+					'with_front' => false,
+				),
+				'show_in_rest' => true,
+			)
+		);
 
 	}
 

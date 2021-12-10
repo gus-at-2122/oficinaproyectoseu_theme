@@ -4,6 +4,7 @@ import './vendor/*.js';
 import '@styles/frontend';
 import '@images/favicon.ico';
 import '@images/logo_eu.png';
+import '@images/logo_eu_w.png';
 import './spritesvg';
 
 // Your code goes here ...

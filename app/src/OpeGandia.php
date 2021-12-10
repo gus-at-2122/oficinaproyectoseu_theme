@@ -7,4 +7,7 @@ use WPEmerge\Application\ApplicationTrait;
  */
 class OpeGandia {
 	use ApplicationTrait;
+
+
+
 }

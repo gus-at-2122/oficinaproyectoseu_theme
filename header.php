@@ -30,7 +30,7 @@
 				<div class="col-md-10 offset-md-1">
 					<nav class="navbar navbar-expand-lg py-0">
 						<a class="navbar-brand" href="<?=bloginfo('url')?>">
-							<img class="logo horizontal-logo img-fluid" src="<?= \OpeGandia::core()->assets()->getAssetUrl( 'images/logo_eu.png' )
+							<img class="logo horizontal-logo img-fluid" src="<?= \OpeGandia::core()->assets()->getAssetUrl( 'images/logo_eu_w.png' )
 							?>" alt="">
 						</a>
 						<button

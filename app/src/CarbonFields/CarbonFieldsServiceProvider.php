@@ -85,9 +85,15 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 			->where( 'post_type', '=', 'ope_announcement' )
 			->add_fields( array(
 				Field::make('rich_text','ope_anno_shortdesc',__('Short description')),
+			));
 
 
-
+		Container::make( 'post_meta', __( 'Convocatoria Data', 'ope_gandia' ) )
+			->where( 'post_type', '=', 'ope_resource' )
+			->add_fields( array(
+				Field::make( 'text', 'url', 'URL' )
+					->set_width( 50 )
+					->set_required(),
 			));
 
 
