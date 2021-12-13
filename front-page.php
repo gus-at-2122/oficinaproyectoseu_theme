@@ -38,8 +38,6 @@
 								</div>
 							</div>
 
-
-
 							<div class="col-md-12 border px-0 ">
 								<div class="bg_transluc p-3">
 									<p class="text-center">¿Quieres estar al día de las nuevas convocatorias?</p>
