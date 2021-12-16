@@ -127,5 +127,32 @@ class ContentTypesServiceProvider implements ServiceProviderInterface
 			)
 		);
 
+		register_taxonomy(
+			'ope_beneficiario',
+			array( 'ope_announcement' ),
+			array(
+				'labels'            => array(
+					'name'              => __( 'Beneficiarios', 'ope_gandia' ),
+					'singular_name'     => __( 'Beneficiarios', 'ope_gandia' ),
+					'search_items'      => __( 'Search Beneficiarios', 'ope_gandia' ),
+					'all_items'         => __( 'All Beneficiarios', 'ope_gandia' ),
+					'parent_item'       => __( 'Parent Beneficiarios', 'ope_gandia' ),
+					'parent_item_colon' => __( 'Parent Beneficiarios:', 'ope_gandia' ),
+					'view_item'         => __( 'View Beneficiarios', 'ope_gandia' ),
+					'edit_item'         => __( 'Edit Beneficiarios', 'ope_gandia' ),
+					'update_item'       => __( 'Update Beneficiarios', 'ope_gandia' ),
+					'add_new_item'      => __( 'Add New Beneficiarios', 'ope_gandia' ),
+					'new_item_name'     => __( 'New Beneficiarios Name', 'ope_gandia' ),
+					'menu_name'         => __( 'Beneficiarios', 'ope_gandia' ),
+				),
+				'hierarchical'      => true,
+				'show_ui'           => true,
+				'show_admin_column' => true,
+				'query_var'         => true,
+				'rewrite'           => array( 'slug' => 'beneficiario' ),
+				'show_in_rest' => true,
+			)
+		);
+
 	}
 }

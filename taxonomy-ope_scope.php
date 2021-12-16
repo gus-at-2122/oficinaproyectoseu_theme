@@ -13,10 +13,12 @@
 
 
 <div <?php post_class(); ?>>
+	<?php \OpeGandia::render('views/partials/intro');?>
+	<section id="ambitos">
 	<div class="container-fluid px-0">
 		<div class="row my-1 mx-0">
 			<div class="col-md-10 offset-md-1">
-				<div class="row">
+				<div class="row my-5">
 					<div class="col-md">
 						<h1 class="display-2"><?= single_term_title(); ?></h1>
 					</div>
@@ -41,10 +43,11 @@
 						<?php
 						while ($query->have_posts()) : $query->the_post();
 							?>
-							<div class="col-md-3">
-							<?php \OpeGandia::render('views/partials/announcement');
-						endwhile; ?>
-						</div>
+							<div class="col-md-4">
+							<?php \OpeGandia::render('views/partials/announcement');?>
+							</div>
+						<?php endwhile; ?>
+
 						<?php
 					}
 					wp_reset_query(); ?>
@@ -77,4 +80,5 @@
 			</div>
 		</div>
 	</div>
+	</section>
 </div>

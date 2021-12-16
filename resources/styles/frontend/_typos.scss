@@ -4,15 +4,34 @@
   font-family: $font-family-sans-serif;
 }
 
+
+.display-1 {
+  font-size: 32px;
+  color: $brand-secondary;
+  font-weight: bold;
+}
+
 .display-2 {
   font-size: 32px;
   color: $brand-primary;
   font-weight: bold;
+
+  a {
+    color: $brand-primary;
+  }
 }
 .display-3 {
-  font-size: 22px;
+  font-size: 20px;
   color: $brand-primary;
   font-weight: bold;
+
+  a {
+    color: $brand-primary;
+  }
+}
+
+.display-4 {
+  font-size: 17px;
 }
 
 

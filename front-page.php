@@ -13,51 +13,7 @@
 <?php while ( have_posts() ) : ?>
 	<?php the_post(); ?>
 	<div>
-		<div class="container-fluid mx-0 px-0">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="http://placehold.it/1920x1080">
-			</div>
-		</div>
-		<section id="intro" class="py-0">
-			<div class="container-fluid px-0">
-				<div class="row align-items-center px-0 m-0">
-					<div class="col-md-8 offset-2">
-						<h1 class="display-2"><strong class="brand-strong">OPE-Gandia</strong>ServicioaPymes y Ciudadanía</h1>
-						<p class="intro_line_h">Servicio municipal que promueve y facilita la participación de los sectores estratégicos y de la sociedad
-							civil en proyectos y el aprovechamiento de oportunidades de financiación a nivel europeo, para el
-							crecimiento de nuestra economía y la transformación hacia una sociedad moderna, digital, verde e
-							inclusiva.</p>
-					</div>
-
-					<div class="col-md-2">
-						<div class="row align-items-center">
-
-
-							<div class="col-md-12 border  ">
-								<div class="bg_transluc p-3">
-									<p class="text-center">¿Quieres estar al día de las nuevas convocatorias?</p>
-								</div>
-							</div>
-
-							<div class="col-md-12 border px-0 ">
-								<div class="bg_transluc p-3">
-									<p class="text-center">¿Quieres estar al día de las nuevas convocatorias?</p>
-								</div>
-							</div>
-							<div class="col-md-12 border px-0 ">
-								<div class="bg_transluc p-3">
-									<p class="text-center">¿Quieres estar al día de las nuevas convocatorias?</p>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-
+		<?php \OpeGandia::render('views/partials/intro');?>
 		<section id="ambitos_featured">
 			<div class="row">
 				<div class="col-md-8 offset-2">

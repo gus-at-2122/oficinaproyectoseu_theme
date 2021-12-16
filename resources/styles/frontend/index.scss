@@ -33,6 +33,7 @@
   transform: translateZ(0);
   transition:all 0.5s; /* Effect for switching from .fixed to static */
   position: relative;
+  border-bottom: 1px solid #fff;
 }
 .float-panel .content-area {margin:10px auto;}
 .float-panel a {font-size:16px;text-decoration:none;color:#fff;display:inline-block;padding:10px 20px;}
@@ -94,7 +95,7 @@ html {
 body {
   font: normal 15px Calibri,Helvetica,Verdana,sans-serif;
   line-height: 1.8;
-  color: #818181;
+  color: #000;
   margin: 0;
 }
 footer {
@@ -145,7 +146,6 @@ section {
 }
 h2 {
   font-size: 24px;
-  text-transform: uppercase;
   color: #303030;
   font-weight: 600;
   margin-bottom: 30px;
@@ -268,7 +268,7 @@ h4 {
 
 
 .parallax-window {
-  height: 275px;
+  height: 200px;
 }
 .navbar {
   position: static;
@@ -276,7 +276,6 @@ h4 {
 
 #menu-main-menu {
   font-weight: 200 !important;
-
   .dropdown-item {
     font-weight: 200 !important;
   }
@@ -391,19 +390,41 @@ h4 {
 }
 #intro {
   background-color: $brand-primary;
+  background-image: url("../../images/pattern-1.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: relative;
   color: #fff !important;
   padding-left: 0;
   padding-right: 0;
   .display-1 {
-    font-size: 30px;
+    font-size: 32px;
     color:$brand-secondary;
-    font-weight: bold;
-    text-align: center;
-
+    font-weight: normal;
+    strong {
+      font-size: 32px;
+      font-weight: bold;
+      color: $brand-secondary;
+      margin-right: .5em;
+    }
   }
   .intro_line_h {
     line-height: 1.9em;
     color: #fff;
+  }
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background-image: url("../../images/pattern-2.png");
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
   }
 }
 
@@ -456,17 +477,198 @@ h4 {
   top: 50%;
 }
 
+#botonera {
+  position: relative;
+  z-index: 9;
+}
 .bg_transluc {
-  background-color: rgba(255,255,255,.3);
+  cursor: pointer;
+  background-color: rgba(255,255,255,.25);
   width: 100%;
   height: 100%;
-}
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+     p {
+        margin-bottom: 0;
+       font-weight: 200;
+     }
 
+  &:hover {
+    background-color: rgba(255,255,255,.50);
+  }
+}
 
 footer {
   background-color: $brand-primary;
   color: #fff;
   h4 {
     color: #fff !important;
+  }
+}
+
+
+#ambitos {
+  background-image: url("../../images/pattern-1.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+}
+
+.anno-snippet {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+  .card-header {
+    padding: 0;
+    border:0;
+    img {
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: 208px;
+    }
+  }
+  .card-post-header {
+    .target {
+      background-color: blue;
+      color:#fff;
+      text-align: center;
+      padding: 3px 0;
+    }
+    .title {
+      text-align: center;
+      font-weight: bold;
+      padding: 10px 0;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .card-body {
+    padding: 20px 35px;
+    strong  {
+      color: #000;
+      font-size: 15px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .meta {
+      display: block;
+      margin-bottom: 25px;
+
+
+    }
+  }
+
+
+
+  &.transformacion-digital {
+    .card-post-header .title {
+      background-color: $transformacion-digital;
+    }
+
+    .card-post-header .target.empresas {
+
+      background-color: $transformacion-digital-light;
+    }
+
+    .card-post-header .target.ciudadania {
+      background-color: #fff;
+      color: $transformacion-digital;
+    }
+    .label {
+      color: $transformacion-digital;
+      a {
+        color: $transformacion-digital;
+      }
+    }
+  }
+
+  &.movilidad {
+    .card-post-header .title {
+      background-color: $movilidad;
+    }
+
+    .card-post-header .target.empresas {
+
+      background-color: $movilidad-light;
+    }
+
+    .card-post-header .target.ciudadania {
+      background-color: #fff;
+      color: $movilidad;
+    }
+    .label {
+      color: $movilidad;
+      a {
+        color: $movilidad;
+      }
+    }
+  }
+
+  &.energia {
+    .card-post-header .title {
+      background-color: $energia;
+    }
+
+    .card-post-header .target.empresas {
+
+      background-color: $energia-light;
+    }
+
+    .card-post-header .target.ciudadania {
+      background-color: #fff;
+      color: $energia;
+    }
+    .label {
+      color: $energia;
+      a {
+        color: $energia;
+      }
+    }
+  }
+
+  &.otros {
+    .card-post-header .title {
+      background-color: $otros;
+    }
+
+    .card-post-header .target.empresas {
+
+      background-color: $otros-light;
+    }
+
+    .card-post-header .target.ciudadania {
+      background-color: #fff;
+      color: $otros;
+    }
+    .label {
+      color: $otros;
+      a {
+        color: $otros;
+      }
+    }
+  }
+
+
+
+
+}
+
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+strong.opcional {
+  font-size: 12px !important;
+  font-weight: bold;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }

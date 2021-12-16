@@ -71,6 +71,7 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 				Field::make( 'text', 'crb_google_maps_api_key', __( 'Google Maps API Key', 'ope_gandia' ) ),
 				Field::make( 'header_scripts', 'crb_header_script', __( 'Header Script', 'ope_gandia' ) ),
 				Field::make( 'footer_scripts', 'crb_footer_script', __( 'Footer Script', 'ope_gandia' ) ),
+				Field::make( 'text', 'ope_phone', __( 'Teléfono de contacto', 'ope_gandia' ) ),
 			) );
 	}
 
@@ -84,7 +85,25 @@ class CarbonFieldsServiceProvider implements ServiceProviderInterface {
 		Container::make( 'post_meta', __( 'Convocatoria Data', 'ope_gandia' ) )
 			->where( 'post_type', '=', 'ope_announcement' )
 			->add_fields( array(
-				Field::make('rich_text','ope_anno_shortdesc',__('Short description')),
+				Field::make( 'text', 'ope_short_desc', __( 'Breve descripcion', 'ope_gandia' ) ),
+
+				Field::make( 'complex', 'ope_beneficiarios', 'Beneficiarios' )
+					->set_layout( 'tabbed-horizontal' )
+					->add_fields( array(
+						Field::make( 'text', 'title', 'Titulo del Enlace' ),
+
+					) ),
+
+				Field::make( 'text', 'ope_fechas', __( 'Fechas', 'ope_gandia' ) ),
+				Field::make( 'complex', 'ope_links', 'Links' )
+					->set_layout( 'tabbed-horizontal' )
+					->add_fields( array(
+						Field::make( 'text', 'title', 'Titulo del Enlace' ),
+						Field::make( 'text', 'link', 'URL del enlace' ),
+
+					) ),
+				Field::make( 'text', 'ope_mensaje_opcional', __( 'Mensaje opcional', 'ope_gandia' ) ),
+
 			));
 
 
