@@ -14,27 +14,38 @@
 	<?php the_post(); ?>
 	<div>
 		<?php \OpeGandia::render('views/partials/intro');?>
-		<section id="ambitos_featured">
-			<div class="row">
-				<div class="col-md-8 offset-2">
-					<div class="row">
-						<div class="col-md"><div class="display-1">Líneas de <br>Trabajo</div></div>
+		<?php $terms = get_terms(array(
+			'taxonomy' => 'ope_scope',
+			'hide_empty' => false,
+		)); ?>
+		<section id="ambitos_featured" >
+			<div class="row align-items-center row-eq-height">
+				<div class="col-md-8 offset-2" data-aos="fade-down"					 data-aos-easing="linear"						 data-aos-duration="1500">
+					<div class="row align-items-center">
 						<div class="col-md">
-							<div class="ova-details ova-linear-gradient">
-								<div class="title">Servicio intra-municipal en materia de <strong>Fondos Europeos</strong></div>
-							</div>
+							<div class="display-1">Tipos de <br>Ayuda</div>
 						</div>
-						<div class="col-md">
+
+						<?php
+						foreach ($terms as $term) {
+							?>
+							<div class="col-md align-items-center ova-wrapper">
 							<div class="ova-details ova-linear-gradient">
-								<div class="title">End</div>
-								<div class="desc">Feb 10, 2022 (9:00AM GMT)</div>
+								<div class="row align-items-center">
+									<div class="col "><div class="title"><?= $term->name ?></div></div>
+									<div class="col px-0 m-0"><div class="pointered"></div></div>
+								</div>
+
 							</div>
-						</div>
+							</div><?php
+						}
+						?>
+
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="quien">
+		<section id="quien" data-aos="fade-down"					 data-aos-easing="linear"						 data-aos-duration="2000">
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
 					<div class="row">
@@ -44,20 +55,23 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="row align-items-center">
-								<div class="col-md text-center text-md-right" >
+							<div class="row align-items-center mb-3">
+								<div class="col-md text-center text-md-left" >
 									<img src="http://placehold.it/100x100" alt="" class="img-fluid">
 								</div>
-								<div class="col-md-10 text-center text-md-right">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi, qui. Doloremque et impedit molestiae quaerat quidem. A ad corporis delectus eligendi esse iure nesciunt odit placeat, sunt temporibus veritatis!</p>
+								<div class="col-md-10 text-center text-md-left">
+									<p>Todas aquellas personas, empresas y entidades que presentan proyectos de modernización, especialmente hacia la transición verde y digital, y que se ajusten a los objetivos y programas que financia la Unión Europea.</p>
 								</div>
 							</div>
 							<div class="row py-5">
-								<div class="col-md text-center text-md-right">
+								<div class="col-md text-center text-md-left">
 									<img src="http://placehold.it/100x100" alt="" class="img-fluid">
 								</div>
-								<div class="col-md-10 text-center text-md-right">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi, qui. Doloremque et impedit molestiae quaerat quidem. A ad corporis delectus eligendi esse iure nesciunt odit placeat, sunt temporibus veritatis!</p>
+								<div class="col-md-10 text-center text-md-left">
+									<p>Empresas, autónomos, asociaciones o entidades de sectores como
+										el comercio, turismo, agricultura y pesca, industria, ocio y tiempo libre,
+										educación, servicios tecnológivos y de atención a las personas... todos
+										pueden optar a estas ayudas.</p>
 								</div>
 							</div>
 						</div>
@@ -73,18 +87,19 @@
 							<h2 class="display-2">Servicios a la ciudadanía y empresas</h2>
 						</div>
 					</div>
-					<div class="row justify-content-around py-5">
+					<div class="row justify-content-around py-5" data-aos="fade-down"					 data-aos-easing="linear"						 data-aos-duration="1500">
 						<div class="col-md-5">
 							<div class="row align-items-center ">
 								<div class="col-md-10 text-right">
 									<h3 class="display-3">Información y divulgación</h3>
 									<ul class="m-0 p-0">
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+										<li>- De la documentación y formularios relacionados con la UE.</li>
+										<li>- De los resultados y buenas prácticas llevadas a cabo en el municipio.</li>
+										<li>-De la información con especificación de las convocatorias, plazos y documentación.</li>
+
 									</ul>
 								</div>
-								<div class="col-md">
+								<div class="col-md text-center">
 									<img src="http://placehold.it/50x50" alt="" class="img-fluid">
 								</div>
 							</div>
@@ -92,31 +107,29 @@
 						<div class="col-md-5 offset-2">
 							<div class="row align-items-center">
 								<div class="col-md-10 text-text order-1">
-									<h3 class="display-3">Información y divulgación</h3>
+									<h3 class="display-3">Orientación y asesoramiento</h3>
 									<ul class="m-0 p-0">
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+										<li>A las personas y empresas gandienses que puedan beneficiarse de las ayudas, asesorándoles en los procesos administrativos de la tramitación y gestión.</li>
 									</ul>
 								</div>
-								<div class="col-md order-0">
+								<div class="col-md order-0 text-center">
 									<img src="http://placehold.it/50x50" alt="" class="img-fluid">
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row justify-content-around py-5">
+					<div class="row justify-content-around py-5" data-aos="fade-down"					 data-aos-easing="linear"					 data-aos-duration="1500">
 						<div class="col-md-5">
 							<div class="row align-items-center ">
 								<div class="col-md-10 text-right">
-									<h3 class="display-3">Información y divulgación</h3>
+									<h3 class="display-3">Dinamización y eventos</h3>
 									<ul class="m-0 p-0">
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+										<li>Gandia contará con una agenda de eventos para la formación en materia de proyectos europeos propia y enlazará con eventos seleccionados que realicen otras entidades:</li>
+										<li>- Cursos, seminarios y actividades divulgativas</li>
+
 									</ul>
 								</div>
-								<div class="col-md">
+								<div class="col-md text-center">
 									<img src="http://placehold.it/50x50" alt="" class="img-fluid">
 								</div>
 							</div>
@@ -124,14 +137,13 @@
 						<div class="col-md-5 offset-2">
 							<div class="row align-items-center">
 								<div class="col-md-10 text-text order-1">
-									<h3 class="display-3">Información y divulgación</h3>
+									<h3 class="display-3">Intermediación...</h3>
 									<ul class="m-0 p-0">
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+										<li>- Para conectar las personas y grupos de interés con los organismos correspondientes en materia de financiación europea.</li>
+										<li>- Se propiciará el intercambio de experiencias y conocimientos en redes locales, regionales y nacionales</li>
 									</ul>
 								</div>
-								<div class="col-md order-0">
+								<div class="col-md order-0 text-center">
 									<img src="http://placehold.it/50x50" alt="" class="img-fluid">
 								</div>
 							</div>
@@ -149,10 +161,9 @@
 			<div class="row justify-content-center">
 				<div class="col-md-8">
 					<div class="row justify-content-center">
-						<?php
-							$nitems = 2;
-							\OpeGandia::render('views/partials/eventsloop',['nitems'=>$nitems]);
-						?>
+						<?= do_shortcode("[ecs-list-events ' limit='3' order='DESC' viewall='true' contentorder='title, thumbnail, excerpt, date, venue']");?>
+
+
 					</div>
 
 				</div>

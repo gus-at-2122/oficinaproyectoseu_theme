@@ -14,22 +14,14 @@
 ?>
 
 <div class="container">
-
-
-
-
-	<?php the_content();?>
-
-
 	<section id="eventos">
 		<div class="row">
 			<div class="col-md">
 				<h2>Eventos</h2>
 			</div>
 		</div>
-
 		<div class="row">
-			<?php \OpeGandia::render('views/partials/eventsloop');?>
+			<?php the_content();?>
 		</div>
 	</section>
 

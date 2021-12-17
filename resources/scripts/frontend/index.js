@@ -20,3 +20,16 @@ import './spritesvg';
 
 // Your code goes here ...
 import 'jquery-parallax.js';
+
+
+AOS.init();
+
+$(".menu-item-has-children").on("click", function(e){
+  e.stopPropagation();
+});
+
+$('.menu-item-has-children').hover(function() {
+  $(".dropdown-menu").delay(200).show();
+}, function() {
+  $(".dropdown-menu").delay(1000).hide(500);
+});

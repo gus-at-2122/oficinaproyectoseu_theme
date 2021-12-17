@@ -23,3 +23,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 register_nav_menus( array(
 	'primary' => __( 'Menú principal', 'WPB4' ),
 ) );
+
+
+function custom_widget_featured_image() {
+	global $post;
+
+	echo tribe_event_featured_image( $post->ID, 'thumbnail' );
+}
+add_action( 'tribe_events_list_widget_before_the_event_title', 'custom_widget_featured_image' );
+
+

@@ -13,14 +13,14 @@
 <?php while ( have_posts() ) : ?>
 	<?php the_post(); ?>
 	<div <?php post_class(); ?>>
-		<?php ope_gandia_the_title( '<h2 class="post-title">', '</h2>' ); ?>
+		<?php // ope_gandia_the_title( '<h2 class="post-title">', '</h2>' ); ?>
 
 		<div class="page__content">
 			<?php the_content(); ?>
 
-			<?php edit_post_link( __( 'Edit this entry.', 'ope_gandia' ), '<p>', '</p>' ); ?>
+		<!--	<?php /*edit_post_link( __( 'Edit this entry.', 'ope_gandia' ), '<p>', '</p>' ); */?>
 
-			<?php \OpeGandia::render( 'views/partials/pagination' ); ?>
+			--><?php /*\OpeGandia::render( 'views/partials/pagination' ); */?>
 		</div>
 	</div>
 <?php endwhile; ?>

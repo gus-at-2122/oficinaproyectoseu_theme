@@ -133,6 +133,8 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 			 */
 			$args = apply_filters( 'nav_menu_item_args', $args, $item, $depth );
 
+
+
 			// Add .dropdown or .active classes where they are needed.
 			if ( isset( $args->has_children ) && $args->has_children ) {
 				$classes[] = 'dropdown';
@@ -186,7 +188,9 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 			// If the item has children, add atts to the <a>.
 			//if ( isset( $args->has_children ) && $args->has_children && 0 === $depth && $args->depth > 1 ) {
 			if ( isset( $args->has_children ) && $args->has_children && $args->depth > 1 ) {
-				$atts['href']          = '#';
+
+
+				$atts['href']          = $item->url;
 				$atts['data-toggle']   = 'dropdown';
 				$atts['aria-haspopup'] = 'true';
 				$atts['aria-expanded'] = 'false';
