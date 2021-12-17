@@ -19,8 +19,8 @@
 						<div class="bg_transluc px-3 py-1">
 							<p class="text-center">¿Quieres estar al día de las nuevas convocatorias?</p>
 							<ul class="rrss list-inline text-center py-1 m-0">
-								<li class="list-inline-item"><img src="http://placehold.it/27x27" alt="" class="img-fluid"></li>
-								<li class="list-inline-item"><img src="http://placehold.it/27x27" alt="" class="img-fluid"></li>
+								<li class="list-inline-item"><img src="<?=\OpeGandia::core()->assets()->getAssetUrl( 'images/telegram.png' )?>" alt="" class="img-fluid"></li>
+								<li class="list-inline-item"><img src="<?=\OpeGandia::core()->assets()->getAssetUrl( 'images/linkedin.png' )?>" alt="" class="img-fluid"></li>
 							</ul>
 						</div>
 

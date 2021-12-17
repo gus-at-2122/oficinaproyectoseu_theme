@@ -7,6 +7,15 @@ import '@images/logo_eu.png';
 import '@images/logo_eu_w.png';
 import '@images/header-bg.jpg';
 import '@images/pattern-1.png';
+import '@images/pattern-bg.png';
+import '@images/icons/email.png';
+import '@images/icons/info.png';
+import '@images/icons/location.png';
+import '@images/icons/phone.png';
+import '@images/icons/telegram.png';
+import '@images/icons/linkedin.png';
+
+
 import './spritesvg';
 
 // Your code goes here ...
