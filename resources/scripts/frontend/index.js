@@ -22,7 +22,9 @@ import './spritesvg';
 import 'jquery-parallax.js';
 
 
-AOS.init();
+AOS.init({
+  once: true
+});
 
 $(".menu-item-has-children").on("click", function(e){
   e.stopPropagation();

@@ -5,7 +5,7 @@
 <section id="intro" class="py-0">
 	<div class="container-fluid px-0">
 		<div class="row align-items-center px-0 m-0">
-			<div class="col-md-6 offset-2 pr-5" data-aos="fade-up"					 data-aos-easing="linear"						 data-aos-duration="1500">
+			<div class="col-md-6 offset-2 pr-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 				<h1 class="display-1"><strong class="brand-strong">OPE-Gandia</strong>Servicio a Pymes y Ciudadanía</h1>
 				<p class="intro_line_h">Servicio municipal que promueve y facilita la participación de los sectores estratégicos y de la sociedad
 					civil en proyectos y el aprovechamiento de oportunidades de financiación a nivel europeo, para el

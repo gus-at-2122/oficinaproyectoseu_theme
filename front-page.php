@@ -14,38 +14,11 @@
 	<?php the_post(); ?>
 	<div>
 		<?php \OpeGandia::render('views/partials/intro');?>
-		<?php $terms = get_terms(array(
-			'taxonomy' => 'ope_scope',
-			'hide_empty' => false,
-		)); ?>
-		<section id="ambitos_featured" >
-			<div class="row align-items-center row-eq-height">
-				<div class="col-md-8 offset-2" data-aos="fade-down"					 data-aos-easing="linear"						 data-aos-duration="1500">
-					<div class="row align-items-center">
-						<div class="col-md">
-							<div class="display-1">Tipos de <br>Ayuda</div>
-						</div>
 
-						<?php
-						foreach ($terms as $term) {
-							?>
-							<div class="col-md align-items-center ova-wrapper">
-							<div class="ova-details ova-linear-gradient">
-								<div class="row align-items-center">
-									<div class="col "><div class="title"><?= $term->name ?></div></div>
-									<div class="col px-0 m-0"><div class="pointered"></div></div>
-								</div>
+		<?php \OpeGandia::render('views/partials/ambitosfeatured');?>
 
-							</div>
-							</div><?php
-						}
-						?>
 
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="quien" data-aos="fade-down"					 data-aos-easing="linear"						 data-aos-duration="2000">
+		<section id="quien" >
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
 					<div class="row">
@@ -118,7 +91,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row justify-content-around py-5" data-aos="fade-down"					 data-aos-easing="linear"					 data-aos-duration="1500">
+					<div class="row justify-content-around py-5" data-aos="fade-down"	data-aos-easing="linear"	 data-aos-duration="1500">
 						<div class="col-md-5">
 							<div class="row align-items-center ">
 								<div class="col-md-10 text-right">
@@ -161,7 +134,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-8">
 					<div class="row justify-content-center">
-						<?= do_shortcode("[ecs-list-events ' limit='3' order='DESC' viewall='true' contentorder='title, thumbnail, excerpt, date, venue']");?>
+						<?php echo do_shortcode("[ecs-list-events]");?>
 
 
 					</div>
